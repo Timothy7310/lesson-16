@@ -383,10 +383,6 @@ template {
   margin-left: 108px;
 }
 
-.navbar__menu-button {
-  display: none;
-}
-
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -413,6 +409,10 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+}
+
+.menu-button {
+  display: none;
 }
 
 .logo {
