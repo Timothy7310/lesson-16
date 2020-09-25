@@ -12,7 +12,9 @@
                 height: 100%
                 width: 100%
                 object-fit: cover
-                
+    .card
+        width: 230px
+        height: 230px              
 
 @media ( max-width: 992px)
     .container, 
@@ -93,6 +95,15 @@
                     top: 50%
     .newsletter
         padding: 70px 0px 69px 0px
+.activities
+    &-wrap
+        flex-wrap: wrap
+    &__card
+        margin-bottom: 20px
+.card
+    width: 340px
+    height: 230px
+
 @media (max-width:768px)
     .container
         max-width: 576px    
@@ -169,6 +180,12 @@
                     right: 50%
                     transform: translate(50%, 0)  
                     margin-right: -65px
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px                    
+    .card
+        width: 49%
+        height: 255px
 @media (max-width: 576px)
     // change
     .container
@@ -237,3 +254,5 @@
                     margin-right: -85px
                 &--prev 
                     margin-left: -85px
+    .card
+        width: 100%
