@@ -1040,7 +1040,7 @@ template {
 }
 
 .activities {
-  padding: 60px 0px 98px 0px;
+  padding: 40px 0px 98px 0px;
 }
 
 .activities__title {
@@ -1119,7 +1119,7 @@ template {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  padding: 7px 22px;
+  padding: 7px 22px 7px 21px;
   color: #ffffff;
   background-color: #EC1F46;
   border: none;
@@ -1247,20 +1247,20 @@ template {
   .newsletter {
     padding: 70px 0px 69px 0px;
   }
-}
-
-.activities-wrap {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.activities__card {
-  margin-bottom: 20px;
-}
-
-.card {
-  width: 340px;
-  height: 230px;
+  .activities {
+    padding: 32px 0px 98px 0px;
+  }
+  .activities-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 339px;
+    height: 255px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1375,10 +1375,6 @@ template {
             transform: translate(50%, 0);
     margin-right: -65px;
   }
-  .activities {
-    padding-top: 40px;
-    padding-bottom: 60px;
-  }
   .card {
     width: 49%;
     height: 255px;
@@ -1452,6 +1448,14 @@ template {
   }
   .reviews-slider__button--prev {
     margin-left: -85px;
+  }
+  .activities {
+    padding: 29px 0px 98px 0px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 36px;
   }
   .card {
     width: 100%;
