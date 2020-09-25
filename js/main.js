@@ -27,6 +27,6 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
-$(".newsletter").parallax({
-  imageSrc: "../img/section-newsletter/newsletter-bg.jpg",
+$(".parallax").parallax({
+  imageSrc: "img/section-newsletter/newsletter-bg.jpg",
 });

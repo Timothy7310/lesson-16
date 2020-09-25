@@ -26,16 +26,25 @@
             padding-bottom: 30px
         &__search
             margin-left: auto
+            // change
+            margin-right: 72px
         &-menu
-            padding-top: 22px
-            padding-bottom: 22px
+            // padding-top: 22px
+            // padding-bottom: 22px
+            padding: 20px 15px 22px 15px
             &__link
                 font-size: 12px
                 line-height: 15px 
     .search
         &__input
-            width: 340px
+            // width: 340px
+            width: 330px    
+        // change
+        &__button
+            width: 65px
+
     .hotel
+        padding-bottom: 60px    
         &-grid
             flex-direction: column
         &__slider
@@ -45,14 +54,45 @@
             padding: 0
         &-slider
             width: 100%
+    // change
+    .rating 
+        margin-bottom: -13px
     .booking
         width: 340px
+        // change
+        padding: 29px 22px 26px 23px
+        &__call
+            &-center
+                margin-bottom: 16px
+        &__number
+            line-height: 30px
+        &__description
+            margin-left: 7px    
     .map
         width: 340px
     .reviews
+        &__title
+            margin-bottom: 47px
+            line-height: 45px
+            font-size: 30px
         &-slider
             &__item
                 max-width: 580px
+            &__avatar
+                margin-bottom: -3px
+            &__username
+                margin-bottom: 10px
+            &__date
+                margin-bottom: 3px
+            &__button
+                &--prev
+                    left: 0
+                    top: 50%
+                &--next
+                    right: 0    
+                    top: 50%
+    .newsletter
+        padding: 70px 0px 69px 0px
 @media (max-width:768px)
     .container
         max-width: 576px    
@@ -130,19 +170,70 @@
                     transform: translate(50%, 0)  
                     margin-right: -65px
 @media (max-width: 576px)
+    // change
+    .container
+        width: 90%
     .logo
-        width: 99px
+        // width: 99px
+        width: 102px
+    .menu
+        // change
+        &-button
+            margin-right: 8px
+            margin-top: 5px
     .hotel
+        // change
+        padding-top: 1px
+        // change
+        padding-bottom: 0px
+        // change
+        &-right
+            display: block
+        // change
+        &-info
+            padding-bottom: 38px
+            &__description
+                width: 280px
         &-slider
-            height: 250px
+            // height: 250px
+            height: 179px
         &__slider
             margin-bottom: 20px
+    .booking
+        width: 97%
+        padding: 27px 22px 26px 24px 
+        margin-bottom: 20px
+    .map
+        margin-bottom: 40px
+        height: 179px
     .newsletter
-        padding: 76px 0 83px 0
+        // padding: 76px 0 83px 0
+        padding: 52px 0 83px 0   
         &__title
-            margin-bottom: 37px
+            // margin-bottom: 37px
+            margin-bottom: 32px
+            line-height: 26px
+            font-size: 20px
+        &-title
+            &__strong
+                font-size: 30px
+                line-height: 47px
     .subscribe
-        width: 100%
+        // width: 100%
+        width: 97%
     .reviews
         &__title
-            font-size: 28px
+            // font-size: 28px
+            font-size: 18px
+            line-height: 23px
+            // change
+            max-width: 245px
+            margin: auto
+            margin-bottom: 42px
+            margin-top: 30px
+        &-slider
+            &__button
+                &--next
+                    margin-right: -85px
+                &--prev 
+                    margin-left: -85px
