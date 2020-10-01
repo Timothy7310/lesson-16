@@ -454,6 +454,7 @@ template {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -893,6 +894,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  cursor: pointer;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1325,6 +1327,7 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
