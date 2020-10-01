@@ -30,3 +30,11 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 $(".parallax").parallax({
   imageSrc: "img/section-newsletter/newsletter-bg.jpg",
 });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("erffefe");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});
