@@ -1435,9 +1435,21 @@ template {
   text-align: center;
 }
 
+.modal__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  margin-right: 40px;
+}
+
 .modal__input {
   width: 100%;
   margin-bottom: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__message {
