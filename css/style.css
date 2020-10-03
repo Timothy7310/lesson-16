@@ -1468,7 +1468,7 @@ template {
 }
 
 .packages {
-  padding: 110px 0px 70px 0px;
+  padding: 14px 0px 65px 0px;
 }
 
 .packages__title {
@@ -1478,7 +1478,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 65px;
+  padding-bottom: 35px;
 }
 
 .packages-wrap {
@@ -1506,7 +1506,6 @@ template {
   background-color: #0A223D;
   color: #ffffff;
   width: 350px;
-  height: 100%;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -1524,7 +1523,8 @@ template {
   font-weight: normal;
   font-size: 14px;
   line-height: 160.6%;
-  padding-bottom: 34px;
+  padding-bottom: 40px;
+  max-width: 300px;
 }
 
 .packages-card__geo {
@@ -1576,7 +1576,11 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.packages-card__room--main {
+  margin-bottom: 40px;
 }
 
 .packages-card__room--text {
@@ -1619,9 +1623,21 @@ template {
 .packages-card-img__offer {
   position: absolute;
   background-color: #EC1F46;
-  padding: 8px 12px 7px 11px;
+  padding: 4px 9px 4px 9px;
   border-radius: 0px 4px 4px 0px;
-  top: 34px;
+  top: 26px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.packages-card-img__offer--main {
+  padding: 8px 20px 7px 11px;
+  top: 26px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 .packages-card__img--main {
@@ -1631,21 +1647,20 @@ template {
 }
 
 .packages-card__info {
-  padding: 30px 48px 30px 32px;
+  padding: 23px 20px 30px 32px;
 }
 
 .packages-card__info--main {
-  width: 300px;
-  padding: 46px 21px 30px 43px;
+  padding: 34px 20px 30px 43px;
 }
 
 .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1710,6 +1725,17 @@ template {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .packages-card {
+    width: 300px;
+  }
+  .packages-card--main {
+    width: 630px;
+  }
+  .packages-card__lux {
+    -ms-grid-column: 3;
+    grid-column: 3;
+    height: 100%;
   }
   .footer__input {
     -ms-flex-preferred-size: 100%;
@@ -1811,6 +1837,43 @@ template {
   .reviews-slider__button--next {
     right: 0;
     top: 50%;
+  }
+  .packages-wrap {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .packages-card {
+    width: 100%;
+  }
+  .packages-card--main {
+    grid-column: span 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    width: 100%;
+  }
+  .packages-card__lux {
+    -ms-grid-row: 2;
+    grid-row: 2px;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .packages-card__white-place {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .packages-card__luxury-place {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .packages-card__five-star {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    grid-column: 2;
   }
   .newsletter {
     padding: 70px 0px 69px 0px;
@@ -2047,6 +2110,28 @@ template {
   .map {
     width: 100%;
   }
+  .packages-card--main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .packages-card__img--main {
+    width: 100%;
+  }
+  .packages-card__descr {
+    display: none;
+  }
+  .price__old {
+    font-size: 12px;
+  }
+  .price__new {
+    font-size: 21px;
+  }
+  .price__btn {
+    font-size: 11px;
+    padding: 9px 24px 9px 24px;
+  }
   .newsletter-wrap {
     max-width: 576px;
     width: 92%;
@@ -2143,6 +2228,34 @@ template {
   .map {
     margin-bottom: 40px;
     height: 179px;
+  }
+  .packages-card__lux {
+    grid-column: span 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .packages-card__white-place {
+    grid-column: span 2;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .packages-card__luxury-place {
+    grid-column: span 2;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .packages-card__five-star {
+    grid-column: span 2;
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
+  .packages-card__img {
+    width: 100%;
+    height: 100%;
+  }
+  .packages-card-img {
+    width: 100%;
+    height: 300px;
   }
   .newsletter {
     padding: 52px 0 83px 0;

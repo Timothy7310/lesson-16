@@ -1,5 +1,5 @@
 .packages
-    padding: 110px 0px 70px 0px
+    padding: 14px 0px 65px 0px
     &__title
         font-style: normal
         font-weight: bold
@@ -7,7 +7,7 @@
         line-height: 45px
         text-align: center
         text-transform: uppercase
-        padding-bottom: 65px
+        padding-bottom: 35px
     &-wrap
         display: grid
         grid-template-columns: repeat(3, minmax(min-content, 1fr))
@@ -20,7 +20,6 @@
         background-color: $dark
         color: $light
         width: 350px
-        height: 100%
         border-radius: 8px
         overflow: hidden
         &__name
@@ -34,7 +33,8 @@
             font-weight: normal
             font-size: 14px
             line-height: 160.6%
-            padding-bottom: 34px
+            padding-bottom: 40px
+            max-width: 300px
         &__geo
             display: flex
             align-items: center
@@ -60,7 +60,9 @@
         &__room
             display: flex
             align-items: center
-            margin-bottom: 24px
+            margin-bottom: 20px
+            &--main
+                margin-bottom: 40px
             &--text
                 font-style: normal
                 font-weight: normal
@@ -84,21 +86,31 @@
             &__offer
                 position: absolute
                 background-color: $primary
-                padding: 8px 12px 7px 11px
+                padding: 4px 9px 4px 9px
                 border-radius: 0px 4px 4px 0px
-                top: 34px
+                top: 26px
+                font-style: normal
+                font-weight: 600
+                font-size: 8px
+                line-height: 10px
+                &--main
+                    padding: 8px 20px 7px 11px
+                    top: 26px
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 12px
+                    
         &__img
             &--main
                 height: 100%
                 object-fit: cover
         &__info
-            padding: 30px 48px 30px 32px
-            &--main
-                width: 300px    
-                padding: 46px 21px 30px 43px
+            padding: 23px 20px 30px 32px
+            &--main   
+                padding: 34px 20px 30px 43px
 .price
     display: flex
-    align-items: center
+    align-items: end
     justify-content: space-between
     &-wrap
         display: flex
