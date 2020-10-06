@@ -1537,14 +1537,14 @@ template {
   margin-bottom: 11px;
 }
 
-.packages-card__geo--text {
+.packages-card__geo_text {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
 }
 
-.packages-card__geo--img {
+.packages-card__geo_img {
   margin-right: 15px;
 }
 
@@ -1558,14 +1558,14 @@ template {
   margin-bottom: 11px;
 }
 
-.packages-card__guests--text {
+.packages-card__guests_text {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
 }
 
-.packages-card__guests--img {
+.packages-card__guests_img {
   margin-right: 15px;
 }
 
@@ -1579,22 +1579,22 @@ template {
   margin-bottom: 20px;
 }
 
-.packages-card__room--main {
+.packages-card__room_main {
   margin-bottom: 40px;
 }
 
-.packages-card__room--text {
+.packages-card__room_text {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
 }
 
-.packages-card__room--img {
+.packages-card__room_img {
   margin-right: 15px;
 }
 
-.packages-card--main {
+.packages-card_main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1616,11 +1616,11 @@ template {
      object-fit: cover;
 }
 
-.packages-card-img--main {
+.packages-card-img_main {
   position: relative;
 }
 
-.packages-card-img__offer {
+.packages-card-img_offer {
   position: absolute;
   background-color: #EC1F46;
   padding: 4px 9px 4px 9px;
@@ -1632,7 +1632,7 @@ template {
   line-height: 10px;
 }
 
-.packages-card-img__offer--main {
+.packages-card-img_offer_main {
   padding: 8px 20px 7px 11px;
   top: 26px;
   font-style: normal;
@@ -1640,7 +1640,7 @@ template {
   font-size: 12px;
 }
 
-.packages-card__img--main {
+.packages-card__img_main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1650,7 +1650,7 @@ template {
   padding: 23px 20px 30px 32px;
 }
 
-.packages-card__info--main {
+.packages-card__info_main {
   padding: 34px 20px 30px 43px;
 }
 
@@ -1729,7 +1729,7 @@ template {
   .packages-card {
     width: 300px;
   }
-  .packages-card--main {
+  .packages-card_main {
     width: 630px;
   }
   .packages-card__lux {
@@ -1845,7 +1845,7 @@ template {
   .packages-card {
     width: 100%;
   }
-  .packages-card--main {
+  .packages-card_main {
     grid-column: span 2;
     -ms-grid-row: 1;
     grid-row: 1;
@@ -2110,13 +2110,19 @@ template {
   .map {
     width: 100%;
   }
-  .packages-card--main {
+  .packages__title {
+    font-size: 30px;
+  }
+  .packages-card_main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .packages-card__img--main {
+  .packages-card-img_main {
+    height: 450px;
+  }
+  .packages-card__img_main {
     width: 100%;
   }
   .packages-card__descr {
