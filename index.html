@@ -28,7 +28,7 @@
             class="search navbar__search navbar__search--mobile--hidden"
           >
             <input
-              type="text"
+              type="search"
               class="search__input"
               placeholder="Search Location"
             />
@@ -79,7 +79,7 @@
                   class="search navbar__search navbar__search--mobile--visible"
                 >
                   <input
-                    type="text"
+                    type="search"
                     class="search__input"
                     placeholder="Search Location"
                   />
@@ -610,7 +610,7 @@
           class="subscribe newsletter__subscribe"
         >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
@@ -931,19 +931,26 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  id="phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message"
@@ -977,24 +984,30 @@
           <img src="img/modal/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
+            id="phone"
+            data-mask="+7 (999) 999-99-99"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Еmail*"
             name="email"
+            required
           />
           <textarea
             class="message modal__message"
@@ -1014,6 +1027,8 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=db676677-552c-4d20-b93a-90641551f432&lang=ru_RU"></script>
     <script src="js/map.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
