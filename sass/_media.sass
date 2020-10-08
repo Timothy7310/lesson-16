@@ -41,7 +41,7 @@
         &__search
             margin-left: auto
             // change
-            margin-right: 72px
+            margin-right: 79px
         &-menu
             // padding-top: 22px
             // padding-bottom: 22px
@@ -52,7 +52,7 @@
     .search
         &__input
             // width: 340px
-            width: 330px
+            width: 339px
         // change
         &__button
             width: 65px
@@ -151,7 +151,9 @@
             grid-column: span 1
             margin: 0
             width: 96px
-
+        &__icon
+            &-wrap
+                min-width: 44px
         &__social
             &-network
                 grid-row: 1 / 2
@@ -162,9 +164,11 @@
                 margin-left: 47px
         &__text
             margin-top: 27px
+            margin-bottom: 25px
         &__categories
             grid-row: 2 / 3
             grid-column: span 2
+            margin-right: 0px
         &__legal
             grid-column: span 2
             margin-left: 19px
@@ -172,16 +176,21 @@
             grid-column: span 2
             margin-left: -39px
         &__title
-            margin: 7px 0px 16px 0px
+            margin: 7px 0px 20px 0px
         &__contact
             &-details
                 grid-column: span 5
                 grid-row: 3
-                margin-top: 15px
+                margin-top: 14px
             &-form
                 grid-column: span 5
                 grid-row: 4
                 margin: -7px 0px 0px 0px
+        &__form
+            width: 93%
+        &__input
+            &-group
+                flex-basis: 47%
         &__rulses
             &-links
                 grid-row: 5
@@ -191,7 +200,8 @@
             &-img
                 grid-row: 5
                 grid-column: 5 / 7
-                padding-top: 15px
+                padding-top: 0px
+                margin-top: 13px
                 width: 136px
 
 @media (max-width:768px)
@@ -389,9 +399,11 @@
             height: 179px
         &__slider
             margin-bottom: 20px
+            width: 97%
+            margin-right: 7px
     .booking
         width: 97%
-        padding: 27px 22px 26px 24px
+        padding: 27px 22px 23px 24px
         margin-bottom: 20px
     .map
         margin-bottom: 40px
@@ -418,7 +430,7 @@
                 height: 300px
     .newsletter
         // padding: 76px 0 83px 0
-        padding: 52px 0 83px 0
+        padding: 52px 0 82px 8px
         &__title
             // margin-bottom: 37px
             margin-bottom: 32px
@@ -428,6 +440,10 @@
             &__strong
                 font-size: 30px
                 line-height: 47px
+        &-wrap
+            padding-top: 7px
+        &__title
+            margin-bottom: 32px
     .subscribe
         // width: 100%
         width: 97%
@@ -485,7 +501,7 @@
                 margin-left: 3px
                 margin-top: 10px
         &__title
-            margin: 0px 0px 13px 0px
+            margin: 0px 0px 16px 0px
         &__legal
             grid-row: 3
             grid-column: 1
@@ -493,36 +509,42 @@
         &__additional
             grid-row: 4
             grid-column: 1
+            margin-bottom: 3px
         &__categories
             grid-row: 5
             grid-column: 1
-            margin-top: 8px
         &__contact
             &-details
                 grid-row: 6
                 grid-column: 1
-                width: 85%
+                width: 98%
             &-form
                 grid-row: 7
                 grid-column: 1
-                width: 84%
+                width: 97%
                 margin-top: 10px
         &__form
             margin-top: 0
+            width: 100%
+        &__message
+            margin-bottom: 14px
         &__info
             order: 2
             flex-basis: 100%
             margin-bottom: 15px
         &__button
             order: 3
+            font-size: 12px
         &__rulses
             &-links
                 grid-row: 8
                 grid-column: 1
-                margin-top: -4px
+                margin-top: -1px
                 margin-left: -10px
             &-img
                 grid-row: 9
                 grid-column: 1
                 justify-self: start
-                margin-top: -100px
+                margin-top: -84px
+    .stars
+        padding-right: 20px
