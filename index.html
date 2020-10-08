@@ -875,7 +875,7 @@
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card"
+            class="card activities__card activities__card_divergent"
             style="order: 0"
             data-aos="fade-up"
             data-aos-duration="800"
@@ -1070,7 +1070,7 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-group">
+              <div class="footer__input-group footer__input-group-name">
                 <input
                   type="text"
                   class="input footer__input"
@@ -1079,13 +1079,14 @@
                   required
                 />
               </div>
-              <div class="footer__input-group">
+              <div class="footer__input-group footer__input-group-tel">
                 <input
                   type="tel"
                   class="input footer__input"
                   id="phone"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="11"
                   required
                 />
               </div>
@@ -1135,11 +1136,11 @@
           <input
             type="tel"
             class="input modal__input"
-            id="phone"
-            data-mask="+7 (999) 999-99-99"
+            id="phone2"
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="11"
           />
           <input
             type="email"
@@ -1167,7 +1168,7 @@
     <script src="js/map.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery-3.3.1.maskedinput.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>

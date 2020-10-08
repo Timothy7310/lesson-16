@@ -624,6 +624,10 @@ template {
   line-height: 15px;
 }
 
+.hotel-info__rating {
+  margin-top: 12px;
+}
+
 .hotel-slider {
   width: 728px;
   height: 450px;
@@ -684,8 +688,8 @@ template {
 }
 
 .stars__img {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 .offer {
@@ -1260,6 +1264,7 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 36px;
+  position: relative;
 }
 
 .footer__ul {
@@ -1335,6 +1340,17 @@ template {
       flex-basis: 48%;
   font-size: 12px;
   line-height: 15px;
+  position: absolute;
+  top: 0;
+  width: 48%;
+}
+
+.footer__input-group-name {
+  left: 0;
+}
+
+.footer__input-group-tel {
+  right: 0;
 }
 
 .footer__message {
@@ -1343,6 +1359,7 @@ template {
   margin-bottom: 23px;
   min-height: 123px;
   resize: none;
+  margin-top: 88px;
 }
 
 .footer__info {
@@ -2334,7 +2351,16 @@ template {
     line-height: 23px;
     margin-bottom: 36px;
   }
-  .card {
+  .activities {
+    padding: 29px 0px 42px 0px;
+  }
+  .activities__card {
+    width: 98%;
+  }
+  .activities__card_divergent {
+    margin-bottom: 26px;
+  }
+  .card__img {
     width: 100%;
   }
   .footer {
@@ -2421,10 +2447,20 @@ template {
   }
   .footer__form {
     margin-top: 0;
+    width: 101%;
+  }
+  .footer__input-group {
     width: 100%;
+  }
+  .footer__input-group-tel {
+    top: 62px;
+  }
+  .footer__input-group-name {
+    top: -2px;
   }
   .footer__message {
     margin-bottom: 14px;
+    margin-top: 127px;
   }
   .footer__info {
     -webkit-box-ordinal-group: 3;
