@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
@@ -297,8 +290,17 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map" id="map"></div>
-            <!-- /.map -->
+
+
+            <!-- <div class="map" id="map"></div> -->
+           
+            <div id="map_container" class="map container-fluid">
+              <script id="ymap_lazy" 
+               async
+                data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A158e0849e9684f18669a84c9780cb77d70602470f21e555b8b3eaec5eb9a20e8&amp;width=645&amp;height=330&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+
+
           </div>
           <!-- /.hotel-right -->
         </div>
@@ -1161,10 +1163,16 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="//api-maps.yandex.ru">
+    <link rel="dns-prefetch" href="//api-maps.yandex.ru">
     <script src="js/jquery-3.5.1.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="js/parallax.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=db676677-552c-4d20-b93a-90641551f432&lang=ru_RU"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=db676677-552c-4d20-b93a-90641551f432&load=package.standard&lang=ru_RU"></script> -->
     <script src="js/map.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

@@ -848,11 +848,14 @@ template {
   cursor: pointer;
 }
 
-.map {
+.map,
+.container-fluid {
   width: 347px;
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
+  background-image: url(../img/section-hotel/map.jpg);
+  background-position: center center;
 }
 
 .newsletter {
