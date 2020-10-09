@@ -81,7 +81,7 @@ $(document).ready(function () {
         },
         email: {
           required: "Enter your email address",
-          email: "Укажите почту корректно, в формате name@domain.com",
+          email: "Enter your email address correctly, in the format name@domain.com",
         },
         phone: {
           required: "Enter your phone number",
