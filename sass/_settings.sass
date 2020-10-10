@@ -33,9 +33,11 @@ img
     border: none
     border-radius: 4px
     cursor: pointer
-    &:hover
-        background: darken($primary , 10% )
 
 .invalid
     color: $primary
     border-bottom: 1px solid $primary
+@media only screen and ( max-width:2300px) and (min-width: 993px)
+    .button
+        &:hover
+            background: darken($primary , 10% )

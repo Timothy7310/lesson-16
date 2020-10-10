@@ -48,13 +48,15 @@ img {
   cursor: pointer;
 }
 
-.button:hover {
-  background: #c71134;
-}
-
 .invalid {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
+}
+
+@media only screen and (max-width: 2300px) and (min-width: 993px) {
+  .button:hover {
+    background: #c71134;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
