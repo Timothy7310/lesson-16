@@ -48,6 +48,10 @@ img {
   cursor: pointer;
 }
 
+.button:hover {
+  background: #c71134;
+}
+
 .invalid {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
@@ -2057,6 +2061,9 @@ template {
   .footer-rulses__link {
     padding-left: 6px;
   }
+  .modal__button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2264,6 +2271,10 @@ template {
   }
   .footer__additional {
     margin-left: 0px;
+  }
+  .modal__dialog {
+    width: 90%;
+    padding: 36px 50px 33px 50px;
   }
 }
 
