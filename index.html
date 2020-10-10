@@ -660,7 +660,7 @@
       <!-- /.container -->
     </section>
 
-    <section
+    <!-- <section
       class="newsletter"
       data-image-src="img/section-newsletter/newsletter-bg.jpg"
       data-parallax="scroll"
@@ -673,7 +673,7 @@
         <form
           action="subscribe.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
         >
           <input
             type="email"
@@ -685,8 +685,27 @@
           <button class="subscribe__button" >Send</button>
         </form>
       </div>
-      <!-- /.newsletter-wrap -->
+    
+    </section> -->
+    <section class="newsletter"
+      data-parallax="scroll"
+      data-image-src="img/section-newsletter/newsletter-bg.jpg"
+      >
+      <div class="newsletter__bg"></div>
+      <div class="newsletter__wrap">
+        <h2 class="newsletter__title">
+          subscribe to our
+          <span class="newsletter__subtitle">Newsletter</span>
+        </h2>
+        <form action="subscribe.php" class="newsletter__form form-newsletter form" method="POST">
+          <div class="form-newsletter__input-wrap">
+            <input  class="form-newsletter__input" type="email" name="email" placeholder="Your email address"  required>
+          </div>
+          <button class="form-newsletter__button">Send</button>
+        </form>
+      </div>
     </section>
+
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">What people think about us</h2>

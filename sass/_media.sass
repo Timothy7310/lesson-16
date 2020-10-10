@@ -29,9 +29,13 @@
                 flex-basis: 100%
 
 @media ( max-width: 992px)
-    .container,
-    .newsletter-wrap
+    .container
         max-width: 700px
+    .newsletter
+        &__wrap
+            max-width: 700px
+            padding: 71px 0 74px
+
     .logo
         width: 132px
     .navbar
@@ -128,8 +132,7 @@
             &__five-star
                 grid-row: 3
                 grid-column: 2
-    .newsletter
-        padding: 70px 0px 69px 0px
+
     .activities
         padding: 32px 0px 50px 0px
         &-wrap
@@ -327,7 +330,7 @@
             font-size: 11px
             padding: 9px 24px 9px 24px
     .newsletter
-        &-wrap
+        &__wrap
             max-width: 576px
             width: 92%
             flex-direction: column
@@ -434,20 +437,26 @@
                 height: 300px
     .newsletter
         // padding: 76px 0 83px 0
-        padding: 52px 0 82px 8px
         &__title
             // margin-bottom: 37px
             margin-bottom: 32px
             line-height: 26px
             font-size: 20px
-        &-title
-            &__strong
-                font-size: 30px
-                line-height: 47px
-        &-wrap
-            padding-top: 7px
-        &__title
-            margin-bottom: 32px
+            margin-top: 25px
+        &__subtitle
+            font-size: 30px
+            line-height: 47px
+        &__wrap
+            padding: 52px 0 82px 8px
+    .form
+        &-newsletter
+            &__input
+                width: 100%
+                padding-left: 18px
+                padding-right: 87px
+                &-wrap
+                    width: 100%
+
     .subscribe
         // width: 100%
         width: 97%
