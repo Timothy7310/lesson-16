@@ -2096,7 +2096,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -2440,7 +2440,12 @@ template {
     padding: 29px 0px 42px 0px;
   }
   .activities__card {
-    width: 98%;
+    width: 282px;
+    height: 255px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
   }
   .activities__card_divergent {
     margin-bottom: 26px;
@@ -2583,6 +2588,20 @@ template {
   }
   .stars {
     padding-right: 20px;
+  }
+}
+
+@media (max-height: 670px) {
+  .modal__dialog {
+    height: 90%;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-height: 520px) {
+  .navbar-menu {
+    height: 510px;
+    overflow-y: scroll;
   }
 }
 /*# sourceMappingURL=style.css.map */
